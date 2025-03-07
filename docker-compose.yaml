@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  php:
+    build: .
+    container_name: php-fpm
+    volumes:
+      - .:/var/www/html
+    networks:
+      - webnet
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    depends_on:
+      - php
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - webnet
+
+  db:
+    image: mysql:latest
+    container_name: mysql_proyecto
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: bbdd
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 12345
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./initdb:/docker-entrypoint-initdb.d
+    networks:
+      - webnet
+
+volumes:
+  db_data:
+
+networks:
+  webnet:
