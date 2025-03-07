@@ -1,7 +1,8 @@
-📌 Proyecto Ascent - Despliegue con Docker
+# 📌 Proyecto Ascent - Despliegue con Docker
 Este proyecto es una aplicación PHP con MySQL y Nginx, configurada para ejecutarse en un entorno Dockerizado. Incluye un sistema de autenticación, gestión de cursos y una interfaz web personalizada.
 
-📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto
+```
 📁 Proyecto_PHP_Nelson_Azan/
  ├── 📂 apartados paginas/    # Imágenes de la página web
  ├── 📄 conexion.php         # Conexión a la base de datos
@@ -25,45 +26,54 @@ Este proyecto es una aplicación PHP con MySQL y Nginx, configurada para ejecuta
  ├── 📂 video/               # Archivos de video
 🚀 Requisitos Previos
 Antes de iniciar el proyecto, asegúrate de tener instalados:
-
-Docker
-Docker Compose
-🔧 Instalación y Uso
-1️⃣ Clonar el Repositorio
+```
+## Docker
+## Docker Compose
+## 🔧 Instalación y Uso
+### 1️⃣ Clonar el Repositorio
+```
 git clone https://github.com/receptaculodedios/ascent.git
 cd ascent
-2️⃣ Configurar la Base de Datos
+```
+### 2️⃣ Configurar la Base de Datos
 El sistema usa MySQL, y los datos de acceso están predefinidos en docker-compose.yaml:
-
+```
 MYSQL_ROOT_PASSWORD: example
 MYSQL_DATABASE: ascent_db
 MYSQL_USER: user
 MYSQL_PASSWORD: password
+```
 Si necesitas cambiar las credenciales, edítalas en docker-compose.yaml.
 
-3️⃣ Construir y Levantar los Contenedores
+### 3️⃣ Construir y Levantar los Contenedores
 Ejecuta el siguiente comando para descargar las imágenes y construir los servicios:
-
+```
 docker-compose up -d --build
+```
 Esto iniciará:
-
+```
 MySQL en localhost:3306
 PHP-FPM conectado con MySQL
 NGINX sirviendo la aplicación en http://localhost
+```
 Para ver los contenedores en ejecución:
-
+```
 docker ps
-🛠 Administración de Contenedores
+```
+### 🛠 Administración de Contenedores
 Si necesitas detener los servicios:
-
+```
 docker-compose down
+```
 Si quieres limpiar los volúmenes y eliminar la caché:
-
+```
 docker-compose down -v
+```
 Para reconstruir la aplicación:
-
+```
 docker-compose up -d --build
-📌 Notas Adicionales
+```
+## 📌 Notas Adicionales
 Si mysql no inicia correctamente, revisa los logs:
 docker logs mysql-db
 Para acceder a MySQL dentro del contenedor:
