@@ -2,27 +2,29 @@ Proyecto Ascent - Despliegue con Docker
 Este proyecto es una aplicación PHP con MySQL y Nginx, configurada para ejecutarse en un entorno Dockerizado. Incluye un sistema de autenticación, gestión de cursos y una interfaz web personalizada.
 
 📂 Estructura del Proyecto
-📁 Proyecto_PHP_Nelson_Azan/
- ├── 📂 apartados paginas/    # Imágenes de la página web
- ├── 📄 conexion.php         # Conexión a la base de datos
- ├── 📄 contacto.php         # Página de contacto
- ├── 📂 css/                 # Archivos CSS para el diseño
- ├── 📄 cursos.php           # Página de cursos
- ├── 🐳 docker-compose.yaml  # Configuración de Docker y servicios
- ├── 📄 Dockerfile           # Dockerfile para construir el contenedor PHP
- ├── 📂 img/                 # Imágenes utilizadas en el proyecto
- ├── 📄 inicio.php           # Página de inicio
- ├── 📄 initdb               # Script de inicialización de la base de datos
- ├── 📂 js/                  # Archivos JS para la funcionalidad
- ├── 📄 Login.php            # Página de login
- ├── 📂 nginx/               # Configuración de Nginx
- ├── 📄 quienes-somos.php    # Página 'Quienes somos'
- ├── 📄 recuperar.php        # Página para recuperar contraseñas
- ├── 📄 recursos.php         # Página con recursos adicionales
- ├── 📄 registro.php         # Página de registro de usuarios
- ├── 📄 salida.php           # Página para cerrar sesión
- ├── 📄 suscripciones.php    # Página de suscripciones
- ├── 📂 video/               # Archivos de video
+```
+ Proyecto_PHP_Nelson_Azan/
+ ├──  apartados paginas/    # Imágenes de la página web
+ ├──  conexion.php         # Conexión a la base de datos
+ ├──  contacto.php         # Página de contacto
+ ├──  css/                 # Archivos CSS para el diseño
+ ├──  cursos.php           # Página de cursos
+ ├──  docker-compose.yaml  # Configuración de Docker y servicios
+ ├──  Dockerfile           # Dockerfile para construir el contenedor PHP
+ ├──  img/                 # Imágenes utilizadas en el proyecto
+ ├──  inicio.php           # Página de inicio
+ ├──  initdb               # Script de inicialización de la base de datos
+ ├──  js/                  # Archivos JS para la funcionalidad
+ ├──  Login.php            # Página de login
+ ├──  nginx/               # Configuración de Nginx
+ ├──  quienes-somos.php    # Página 'Quienes somos'
+ ├──  recuperar.php        # Página para recuperar contraseñas
+ ├──  recursos.php         # Página con recursos adicionales
+ ├──  registro.php         # Página de registro de usuarios
+ ├──  salida.php           # Página para cerrar sesión
+ ├──  suscripciones.php    # Página de suscripciones
+ ├──  video/               # Archivos de video
+```
 🚀 Requisitos Previos
 Antes de iniciar el proyecto, asegúrate de tener instalados:
 
