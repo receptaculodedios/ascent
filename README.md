@@ -1,7 +1,7 @@
-Proyecto Ascent - Despliegue con Docker
+# Proyecto Ascent - Despliegue con Docker
 Este proyecto es una aplicación PHP con MySQL y Nginx, configurada para ejecutarse en un entorno Dockerizado. Incluye un sistema de autenticación, gestión de cursos y una interfaz web personalizada.
 
-📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 ```
  Proyecto_PHP_Nelson_Azan/
  ├──  apartados paginas/    # Imágenes de la página web
@@ -25,13 +25,13 @@ Este proyecto es una aplicación PHP con MySQL y Nginx, configurada para ejecuta
  ├──  suscripciones.php    # Página de suscripciones
  ├──  video/               # Archivos de video
 ```
-🚀 Requisitos Previos
+## 🚀 Requisitos Previos
 Antes de iniciar el proyecto, asegúrate de tener instalados:
 
-Docker
-Docker Compose
+## Docker
+# Docker Compose
 🔧 Instalación y Uso
-1️⃣ Clonar el Repositorio
+# 1️⃣ Clonar el Repositorio
 git clone https://github.com/receptaculodedios/ascent.git
 cd ascent
 2️⃣ Configurar la Base de Datos
