@@ -73,15 +73,3 @@ Para reconstruir la aplicación:
 ```
 docker-compose up -d --build
 ```
-## 📌 Notas Adicionales
-Si mysql no inicia correctamente, revisa los logs:
-docker logs mysql-db
-Para acceder a MySQL dentro del contenedor:
-docker exec -it mysql-db mysql -uuser -ppassword
-Si necesitas depurar la aplicación, revisa los logs de PHP:
-docker logs php-app
-📜 Licencia
-Este proyecto está bajo la licencia MIT. Puedes modificarlo y distribuirlo libremente.
-
-🙌 Contribución
-Si deseas contribuir, envía un pull request o abre un issue en GitHub.
